@@ -85,12 +85,22 @@
   something: when, for which team and game, and how it ended, such as whether
   you accepted it. We count how you use Squadly to see whether it helps coaches,
   never what you said.</p>
-  <p><strong>About your team:</strong> what you enter: player names, jersey numbers,
-  playing time, attendance, lineups, and game history; parent contact info if
-  you choose to add it; player photos, which stay on the phone you add them on;
-  and the email address of any co-coach you invite.</p>
-  <p><strong>If you subscribe to Squadly Pro:</strong> whoever sells it takes the
-  payment, and we never see your card. In the iPhone app that is Apple, on
+  <p><strong>About your team:</strong> what you enter: player names, jersey
+  numbers, playing time, attendance, lineups, and game history; parent contact
+  info if you choose to add it; and player photos, which stay on the phone you
+  add them on. Coaches on the same team can see each other’s email address. An
+  invite link carries the email of the coach who sent it.</p>
+  <p><strong>If you connect TeamSnap</strong> in the iPhone app or on
+  heysquadly.com, we keep the connection on our server (TeamSnap’s access key,
+  encrypted) and check TeamSnap about every 5 minutes, so changes there reach
+  your phone and heysquadly.com. We keep a copy of what we read: the roster
+  (names, shirt numbers, positions), the schedule and who’s coming. Deleting
+  your account removes the connection and the copy. Disconnecting TeamSnap
+  removes it from your phone or browser only; to have us remove the server copy
+  too, email <a
+  href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
+  <p><strong>If you subscribe to Squadly Pro:</strong> whoever sells it takes
+  the payment, and we never see your card. In the iPhone app that is Apple, on
   Android it is Google Play, and on heysquadly.com it is Stripe, which sells it
   for us through its Link service and handles the sales tax. Your account ID
   goes with the purchase so the seller can tell us whose it is, and Stripe also
@@ -98,9 +108,9 @@
   (which plan, when it started and ends, whether it renews, whether it was
   cancelled or refunded, and the seller’s number for it), and we keep it with
   your account so the other coaches on your team are covered too. If your team
-  uses a region’s code, we keep which team used it, who entered it and when,
-  and we note each try at a code so codes can’t be guessed. We also count how
-  many of each team’s games have started, for the three free games.</p>
+  uses a region’s code, we keep which team used it, who entered it and when, and
+  we note each try at a code so codes can’t be guessed. We also count how many
+  of each team’s games have started, for the three free games.</p>
   <p>Squadly does not collect location, contacts, or browsing history.</p>
 
   <h2>What we never do</h2>
@@ -110,14 +120,17 @@
 
   <h2>Squadly’s assistant</h2>
   <p>Ask Squadly for something long (“make our lineup, start Maya, and balance
-  the minutes”) and it works through it with an AI model run by Mistral AI, in
-  France. Squadly sends only what the job needs: your words, shirt numbers,
-  positions, minutes played (today and in past games), results, and your
-  schedule. <strong>Before anything leaves your phone or browser, every
-  player’s name is swapped for a made-up one</strong>, so Mistral never receives
-  a child’s name. In the app that includes a new player you ask Squadly to add.
-  On heysquadly.com, the name you type for a new player goes once, in your own
-  words, and is swapped from then on. Nothing changes until you tap Accept.</p>
+  the minutes”) and it works through it with an AI model run by Mistral AI, a
+  company based in France. Squadly sends only what the job needs: your words,
+  shirt numbers, positions, minutes played (today and in past games), results,
+  and your schedule. <strong>Every player on your roster has their name swapped
+  for a made-up one before anything leaves your phone or browser</strong>, and
+  in the app so does a new player you ask Squadly to add. On heysquadly.com, the
+  name you type for a new player goes once, in your own words, and is swapped
+  from then on. A name that isn’t on your roster, like an opposing player, goes
+  as you said it, so keep children’s names out of requests when you can. The
+  assistant’s changes wait for you to tap Accept; the phone’s own short commands
+  (subs, goals, the clock) carry out after a moment unless you cancel.</p>
   <p><strong>Files you give Squadly on heysquadly.com</strong> (a roster, a
   schedule, a calendar, a screenshot, or a table you paste) are read on your own
   computer, in your browser, and are never uploaded. Screenshots are read by a
@@ -134,32 +147,32 @@
   button, until you let go or finish talking. Each time you talk to it, the
   audio is sent as a short clip, with the first names on your roster and the
   opponent’s name so they’re spelled right, to a speech-to-text service run by
-  Groq, in the United States, which sends the words back. Names you say out loud
-  are in that audio. Apart from a new player’s name typed on heysquadly.com,
-  this is the only way a child’s name reaches an AI or speech service. If you’d
-  rather nothing you say leaves your device, type to Squadly instead of
-  talking.</p>
+  Groq, a company based in the United States, which sends the words back. Names
+  you say out loud are in that audio, so a child’s name can reach Groq this way.
+  To keep audio off the internet, type instead of talking. Typed requests that
+  Squadly’s assistant takes on still go to Mistral, with player names
+  swapped.</p>
   <p>When you tell Squadly which player it misheard (“did you mean Maya?”), it
   remembers that on your phone so it hears the name right next time. That stays
   on your phone.</p>
-  <p>Neither service uses any of this to train AI. Each may keep it for up to
-  30 days only to check for abuse and keep its service running, then it is
-  deleted. Squadly keeps none of it.</p>
+  <p>Neither service uses any of this to train AI. Each may keep it for up to 30
+  days only to check for abuse and keep its service running, then it is deleted.
+  Squadly keeps none of it.</p>
 
   <h2>Where it lives and who can see it</h2>
-  <p>Data is stored with Supabase (a hosted database service) on servers in
-  the United States and encrypted in transit. Signing in on heysquadly.com shows
-  the same data, under the same rules. Only the coaches on your team can see
-  your team’s data, enforced by database-level security rules. There are no
-  public pages or shareable links to player data.</p>
+  <p>Data is stored with Supabase (a hosted database service) on servers in the
+  United States and encrypted in transit. Signing in on heysquadly.com shows the
+  same data, under the same rules. Only the coaches on your team can see your
+  team’s data, enforced by database-level security rules. There are no public
+  pages or shareable links to player data.</p>
 
   <h2>About players</h2>
   <p>Players never use Squadly: no logins, no screens for them. The coach
   decides what to enter and is responsible for any consent their league or
   parents require, especially for photos. Roster data is shown only to the
   team’s coaches. Parents: to see or remove your child’s info, ask the coach, or
-  email
-  <a href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
+  email <a
+  href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
 
   <h2>Deleting your data</h2>
   <p><strong>Settings › Account › Delete Account</strong> in the app, or
@@ -171,47 +184,59 @@
   you as a member. A Squadly Pro subscription bought on heysquadly.com is
   cancelled at once and your customer record at Stripe is deleted; Stripe keeps
   its own payment records. One bought from Apple or Google Play keeps renewing
-  until you cancel it in that store. If deletion fails, email
-  <a href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
+  until you cancel it in that store. If deletion fails, email <a
+  href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
   <p>Removing a player in the Roster tab takes them off the roster for every
-  coach on the team. Their name and past minutes stay in the team’s history, so
-  season totals stay right, until the team is deleted. To erase a player
-  completely, email
-  <a href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>.</p>
+  coach on the team. Their name, past minutes and any parent contact you entered
+  stay hidden in the team’s history, so season totals stay right, until the team
+  is deleted. Email <a
+  href="mailto:eeshankhandelwal123@gmail.com">eeshankhandelwal123@gmail.com</a>
+  and we’ll erase them completely.</p>
+  <p><strong>How long we keep it.</strong> Nothing is deleted on a schedule:
+  data stays until you or your team’s coaches delete it, or your account is
+  deleted as above. Contact messages are kept until you ask us to delete them;
+  deleting your account only detaches your account ID from them. A TeamSnap copy
+  is kept until you delete your account or ask us to remove it. A removed player
+  stays hidden with the team until the team is deleted or you ask us to erase
+  them.</p>
 
   <h2>The website, heysquadly.com</h2>
   <p>You can sign in there with the same Squadly account you use in the app,
-  with Apple, Google or an email link. Signing in lets you see and plan your team
-  the same as in the app, post in Team Talk (free with every Squadly account),
-  file and vote on requests, and comment. Signed-out visitors can read Team Talk
-  and the requests and send a contact message; nothing else on the site needs an
-  account.</p>
+  with Apple, Google or an email link. Signing in lets you see and plan your
+  team the same as in the app, post in Team Talk (free with every Squadly
+  account), file and vote on requests, and comment. Signed-out visitors can read
+  Team Talk and the requests and send a contact message; nothing else on the
+  site works without an account.</p>
   <p>Team Talk and the requests are public: anyone can read the posts and
-  comments, signed in or not, with the display name on each. Keep players’ names
-  out of them. Posts, comments and votes are stored against your account. Your
-  display name is made from your first name and last initial, never your full
-  name or email, and you can change it at any time. Vote counts are public; who
-  voted is not. Replies to your posts create a notification for you inside the
-  site.</p>
+  comments, signed in or not, and each post shows your display name. Keep
+  players’ names out of them. Posts, comments and votes are stored against your
+  account. Your display name is made from your first name and last initial,
+  never your full name or email, and you can change it at any time. Vote counts
+  are public; who voted is not. Replies to your posts create a notification for
+  you inside the site.</p>
   <p>The contact form stores the name, email address and message you send, and
-  your account ID if you were signed in, so we can reply.</p>
+  your account ID if you were signed in, so we can reply. Messages are kept,
+  including ones marked as spam, and each one that isn’t spam is copied to
+  Eeshan’s to-do list so he sees it.</p>
   <p>The site sets cookies only to keep you signed in, to remember which of your
   teams you are looking at and your time zone, and, for an hour while you
-  connect TeamSnap, to hold that connection. There are no analytics or
-  advertising trackers. Apple’s sign-in script loads on the sign-in page. The
-  support page shows a preview image of the walkthrough video that loads from
-  YouTube; opening the video takes you to YouTube, which has its own privacy
-  policy.</p>
-  <p>Website data lives in the same Supabase project as the app, on servers in
-  the United States. Deleting your Squadly account removes your profile, posts,
-  comments and votes there too. Contact messages are kept so they can be
-  answered; your account ID is detached from them when the account is
-  deleted.</p>
+  connect TeamSnap, to hold that connection. Your browser also keeps a few
+  display choices (whether Squadly’s panel is open, a hint you closed) and, once
+  you add a screenshot, the text reader’s English model, so the next one reads
+  faster; none of it is personal data. There are no analytics or advertising
+  trackers. Apple’s sign-in script loads on the sign-in page. The support page
+  shows a preview image of the walkthrough video that loads from YouTube;
+  opening the video takes you to YouTube, which has its own privacy policy.</p>
+  <p>The site is hosted by Vercel. Website data lives in the same Supabase
+  project as the app, on servers in the United States. Deleting your Squadly
+  account removes your profile, posts, comments and votes there too. Contact
+  messages are kept so they can be answered; your account ID is detached from
+  them when the account is deleted.</p>
 
   <h2>Changes and contact</h2>
-  <p>Material changes update the effective date above; significant changes
-  are flagged in the app. Questions or requests:
-  <a href="mailto:eeshankhandelwal123@gmail.com"><strong>eeshankhandelwal123@gmail.com</strong></a>.</p>
+  <p>Material changes update the effective date above; significant changes are
+  flagged in the app. Questions or requests: <a
+  href="mailto:eeshankhandelwal123@gmail.com"><strong>eeshankhandelwal123@gmail.com</strong></a>.</p>
 
   <p class="footer">Squadly is published by Parle LLC.</p>
 </main>
