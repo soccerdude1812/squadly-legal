@@ -164,8 +164,14 @@
   Mistral, and you can change your answer in Settings.</p>
 
   <h2>Where it lives and who can see it</h2>
+  <!-- The Brevo sentence is true only once Supabase Auth sends through Brevo
+       (smtp_host smtp-relay.brevo.com; squadly-app docs/email-provider-setup.md).
+       Release-day step 9 checks it; if it isn't so, take the sentence out of all
+       three copies before this publishes. -->
   <p>Data is stored with Supabase (a hosted database service) on servers in the
-  United States and encrypted in transit. Signing in on heysquadly.com shows the
+  United States and encrypted in transit. The emails for signing up, signing in
+  and resetting a password are sent by Brevo, an email service based in France,
+  which gets your email address and the email itself. Signing in on heysquadly.com shows the
   same data, under the same rules. Only the coaches on your team can see your
   team’s data, enforced by database-level security rules. There are no public
   pages or shareable links to player data.</p>
@@ -214,7 +220,10 @@
   <p>Team Talk and the requests are public: anyone can read the posts and
   comments, signed in or not, and each post shows your display name and not your
   account ID. Keep players’ names out of them. Posts, comments and votes are
-  stored against your account. Your display name is made from your first name
+  stored against your account. To keep spam out, each account can post only so
+  often, so we also note when you post or reply and in which thread, never what
+  you wrote; a note stays if you delete the post, is cleared the next time you
+  post once it’s two days old, and is erased with your account. Your display name is made from your first name
   and last initial, never your full name or email, and you can change it at any
   time. Vote counts are public; who voted is not. Replies to your posts create a
   notification for you inside the site.</p>
